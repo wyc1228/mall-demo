@@ -25,7 +25,9 @@ export default {
   },
   methods: {
     itemClick(index) {
-      this.currentIndex = index
+      this.currentIndex = index;
+      // 子组件点击传递到父组件去
+      this.$emit('tabClick',index)
     }
   }
 }
